@@ -29,9 +29,4 @@ public class AccountingController {
         return accountingService.getBalance(userId);
     }
 
-    @GetMapping
-    @ResponseStatus(HttpStatus.OK)
-    public void get() {
-        accountingService.endOfDaySumCalculation();
-    }
 }
